@@ -31,7 +31,7 @@ View [all configs](doc/configs.md) or `:help lspconfig-all` from Nvim.
    npm i -g pyright
    ```
 2. Add the language server setup to your init.lua.
-    - Nvim 0.11+ (see [vim.lsp.config](#vim.lsp.config))
+    - Nvim 0.11+ (see [vim.lsp.config](#vimlspconfig))
       ```lua
       vim.lsp.enable('pyright')
       ```
@@ -39,12 +39,12 @@ View [all configs](doc/configs.md) or `:help lspconfig-all` from Nvim.
       ```lua
       require'lspconfig'.pyright.setup{}
       ```
-3. Ensure your project/workspace contains a root marker as specified in `:help lspconfig-all`.
-4. Open a code file in Nvim. LSP will attach and provide diagnostics.
+4. Ensure your project/workspace contains a root marker as specified in `:help lspconfig-all`.
+5. Open a code file in Nvim. LSP will attach and provide diagnostics.
    ```
    nvim main.py
    ```
-5. Run `:checkhealth lsp` to see the status or to troubleshoot.
+6. Run `:checkhealth lsp` to see the status or to troubleshoot.
 
 Read `:help lspconfig` for details. Read `:help lspconfig-all` for the full list of server-specific details.
 For servers not on your `$PATH` (e.g., `jdtls`, `elixirls`), you must manually set the `cmd` parameter, see [vim.lsp.config](#vim.lsp.config).
